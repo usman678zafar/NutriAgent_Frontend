@@ -24,13 +24,13 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-500 to-indigo-600 pt-16 pb-16 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="relative bg-gradient-to-br from-blue-600 via-blue-500 to-indigo-600 py-6 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-white space-y-8"
+            className="text-white space-y-3 md:space-y-4 max-w-3xl"
           >
             <p className="text-blue-100 font-bold tracking-widest uppercase text-sm">#1 AI Nutrition System</p>
             <h1 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter">
@@ -47,18 +47,18 @@ export default function LandingPage() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.8, rotate: 5 }}
-            animate={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="relative flex justify-center lg:justify-end"
+            initial={{ opacity: 0, x: 30, scale: 0.96 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="relative mx-auto w-full max-w-[300px] md:max-w-[380px] lg:mx-0 lg:-translate-x-20 lg:max-w-[440px]"
           >
-            <div className="relative w-[300px] md:w-[400px] aspect-[9/19.5] drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)]">
+            <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="/landing/hero.png"
-                alt="NutriAgent AI App Mockup"
+                src="/landing/hero3.png"
+                alt="NutriAgent AI dashboard preview"
                 fill
-                className="object-contain"
                 priority
+                className="object-contain"
               />
             </div>
           </motion.div>
